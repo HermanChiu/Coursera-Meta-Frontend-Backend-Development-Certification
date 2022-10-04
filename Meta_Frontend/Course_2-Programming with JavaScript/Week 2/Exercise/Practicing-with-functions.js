@@ -32,9 +32,38 @@ function letterFinder(word, match){
             console.log('---No match found at', i)
         }
     }
+    console.log("\n")
 }
 letterFinder("test", "t")
 
 letterFinder("test", "e")
 
 letterFinder("kenkfasdkbh", "k")
+
+//  improvement and defensive programming
+function letterFinder2(word, match){
+    if(typeof(word) !== "string"){
+        console.log("the word must be a string \n")
+        return
+    }
+    if(match.length !== 1){
+        console.log("the match character must of of length 1 \n")
+        return
+    }
+    for( var i = 0; i<word.length; i++){
+        if(word[i] == match){
+            console.log('Found the', match, 'at', i)
+        }else{
+            console.log('---No match found at', i)
+        }
+    }
+    console.log("\n")
+}
+letterFinder2("test", "t")
+
+letterFinder2("test", "e")
+
+letterFinder2("kenkfasdkbh", "k")
+
+letterFinder2("kenkfasdkbh", "k3")
+letterFinder2(123, "k")
