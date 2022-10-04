@@ -76,7 +76,7 @@ def summarize_order(order):
     for item in order:
         names.append(item["name"])
     return (names, total)
-    raise NotImplementedError()
+
 
 # This function is provided for you, and will print out the items in an order
 def print_order(order):
@@ -110,15 +110,17 @@ Feel free to change, uncomment, and add these as you wish.
 '''
 def main():
     order = take_order()
-    print_order(order)
+    # print_order(order)
 
-    subtotal = calculate_subtotal(order)
-    print("Subtotal for the order is: " + str(subtotal))
+    # subtotal = calculate_subtotal(order)
+    # print("Subtotal for the order is: " + str(subtotal))
 
-    tax = calculate_tax(subtotal)
-    print("Tax for the order is: " + str(tax))
+    # tax = calculate_tax(subtotal)
+    # print("Tax for the order is: " + str(tax))
 
-    items, subtotal = summarize_order(order)
+    names, total = summarize_order(order)
+    print(f"You ordered {names}")
+    print("Total for the order is: " + str(total))
 
 if __name__ == "__main__":
     main()
