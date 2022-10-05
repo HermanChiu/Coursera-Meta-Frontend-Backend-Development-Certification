@@ -35,8 +35,32 @@ function letterFinder(word, match) {
             }
         }
     }else{
-        console.log("Please pass corrct arguments to the function.")
+        console.log("Please pass correct arguments to the function.")
     }
 }
 letterFinder("apple", "pp")
 letterFinder("cat", "c")
+
+// My custom solution
+function letterFinder2(word, match) {
+    if ( typeof(word) !== "string" || word.length < 2){
+        console.log("The word must but a string and longer than 2 letters")
+        return
+    }
+    if ( typeof(match) !== "string" || match.length != 1){
+        console.log("The match char must be a string consisting of only 1 letter")
+        return
+    }
+    for(i = 0; i < word.length; i++) {
+        if(word[i] == match) {
+            console.log('Found the', match, 'at', i)
+        } else {
+            console.log('---No match found at', i)
+        }
+    }
+
+}
+letterFinder2("apple", "pp")
+letterFinder2("cat", "c")
+letterFinder2("applepps", "pp")
+letterFinder2("catcaw2fc", "c")
