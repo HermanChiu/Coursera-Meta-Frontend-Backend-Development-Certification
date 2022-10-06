@@ -1,5 +1,6 @@
 # Import ABC and abstractmethod from the module abc (which stands for abstract base classes)
 from abc import ABC, abstractmethod
+from hashlib import sha3_384
 
 # Class Bank
 class Bank(ABC):
@@ -58,7 +59,7 @@ class Swiss(Bank):
     
     def withdraw(self, amount):
         if(amount > self.bal):
-            print("Insufficient funds")
+            print(f"Insufficient funds, you only have {self.bal} but attempted to withdraw {amount}")
             return self.bal
         self.bal -= amount
         print(f"Withdrawn amount: {amount}")
@@ -72,6 +73,13 @@ def main():
     print(s.basicinfo())
     s.withdraw(30)
     s.withdraw(1000)
+    s.withdraw(970)
+    print("Second Swiss acc")
+    s2 = Swiss()
+    s2.withdraw(1000)
+    print("Third Swiss acc")
+    s3 = Swiss()
+    s3.withdraw(10000)
 
 if __name__ == "__main__":
     main()
