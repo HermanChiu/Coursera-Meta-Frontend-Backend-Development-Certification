@@ -9,7 +9,7 @@ Meta frontend and backend courses
 4. HTML and CSS in depth
 5. React Basics
 
-## Meta Back-End Developer
+## Meta Back-End Developer Professional Certificate
 
 1. Introduction to Back-End Development
 2. Programming in Python
