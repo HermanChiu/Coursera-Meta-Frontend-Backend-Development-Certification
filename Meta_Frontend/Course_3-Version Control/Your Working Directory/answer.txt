@@ -1,0 +1,6 @@
+pwd
+
+
+i.e
+coder@e15f46a33f8b:~/project$ pwd
+/home/coder/project
