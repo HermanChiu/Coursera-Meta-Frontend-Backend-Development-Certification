@@ -1,0 +1,8 @@
+cd repo-exercise
+git status
+git add result.txt README.txt
+git status
+git commit -m "Successful exercise"
+git push
+
+https://github.com/HermanChiu/repo-exercise
