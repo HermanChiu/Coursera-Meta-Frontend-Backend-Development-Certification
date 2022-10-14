@@ -1,0 +1,10 @@
+CREATE DATABASE cm_devices;
+USE cm_devices;
+CREATE TABLE devices( deviceID int, deviceName varchar(50), price decimal);
+show tables;
+show columns from devices;
+
+CREATE TABLE deviceStock ( deviceID int, quantity int, totalCost decimal);
+INSERT into deviceStock VALUE( 1, 5, 5000.75);
+INSERT into  deviceStock VALUE( 2, 3, 3500.50);
+Select * from deviceStock;
