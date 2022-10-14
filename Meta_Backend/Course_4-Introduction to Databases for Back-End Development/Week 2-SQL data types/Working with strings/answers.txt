@@ -1,0 +1,10 @@
+mysql;
+CREATE DATABASE cm_devices;
+USE cm_devices;
+CREATE TABLE customers( username CHAR(9), fullName VARCHAR(100), email VARCHAR(255));
+Show tables;
+
+
+Additional task:
+CREATE TABLE  feedback( FeedbackID CHAR(8), Type VARCHAR(100), Comment VARCHAR(500));
+Show tables;
