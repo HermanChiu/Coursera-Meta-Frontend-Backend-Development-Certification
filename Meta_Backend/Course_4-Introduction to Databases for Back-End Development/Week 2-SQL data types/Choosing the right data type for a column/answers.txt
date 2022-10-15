@@ -1,0 +1,5 @@
+CREATE DATABASE cm_devices;
+use cm_devices
+CREATE TABLE invoice(customerID VARCHAR(50), orderDate DATE, quantity INT, price DECIMAL);
+Show tables;
+Show columns from invoice;
