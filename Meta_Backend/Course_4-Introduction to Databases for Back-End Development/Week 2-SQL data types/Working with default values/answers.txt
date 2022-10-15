@@ -1,0 +1,26 @@
+CREATE DATABASE cm_devices;
+USE cm_devices;
+CREATE TABLE address(customerID INT NOT NULL, street VARCHAR(255), postcode VARCHAR(10), town VARCHAR(30) DEFAULT "Harrow");
+Show tables;
+Show columns from address; 
+
+Additional task:
+DROP TABLE address;
+CREATE TABLE address(customerID INT NOT NULL, street VARCHAR(255), postcode VARCHAR(10) DEFAULT "HA97DE", town VARCHAR(30) DEFAULT "Harrow");
+
+Test:
+
+ALTER TABLE address ADD DEFAULT 'HA97DE' FOR postcode;
+ALTER TABLE address ADD CONSTRAINT DF_SomeName DEFAULT N'HA97DE' FOR postcode;
+ALTER TABLE address ADD DEFAULT('HA97DE') FOR postcode;
+
+sp_help address;
+ALTER TABLE address ADD DEFAULT 'HA97DE' FOR postcode;
+
+
+## does not really work
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near
+### 
+In this case my SQL server does not allow to modify existing default constraint value. So to change the default value we need to delete 
+the existing system generated or user generated default constraint. And after that default value can be set for a particular column.
+ref: https://stackoverflow.com/a/28688718
