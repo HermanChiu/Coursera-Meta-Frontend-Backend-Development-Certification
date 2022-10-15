@@ -3,3 +3,8 @@ use cm_devices
 CREATE TABLE invoice(customerID VARCHAR(50), orderDate DATE, quantity INT, price DECIMAL);
 Show tables;
 Show columns from invoice;
+
+Additional Task:
+CREATE TABLE customerinfo(accountNum INT, phoneNumber INT, email VARCHAR(50));
+Show tables;
+Show columns from customerinfo;
