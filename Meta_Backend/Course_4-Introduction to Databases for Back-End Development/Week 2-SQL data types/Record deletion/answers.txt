@@ -53,3 +53,6 @@ SELECT * FROM customers;
 |          5 | Jade         | 10 Copland Ave Portsmouth  |
 +------------+--------------+----------------------------+
 
+Self task:
+##delete whole table
+DELETE FROM customers;
