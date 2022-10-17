@@ -1,0 +1,47 @@
+mysql;
+CREATE DATABASE football_club;
+use football_club;
+CREATE TABLE players(playerID INT, playerName VARCHAR(50), age INT);
+show tables;
+
+output: 
++-------------------------+
+| Tables_in_football_club |
++-------------------------+
+| players                 |
++-------------------------+
+
+show columns from players;
+
+output: 
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| playerID   | int         | YES  |     | NULL    |       |
+| playerName | varchar(50) | YES  |     | NULL    |       |
+| age        | int         | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+
+Additional Task:
+CREATE TABLE games( gameID INT, score INT, gameDate DATE);
+
+show tables;
+
+output: 
++-------------------------+
+| Tables_in_football_club |
++-------------------------+
+| games                   |
+| players                 |
++-------------------------+
+
+show columns from players;
+
+output: 
++----------+------+------+-----+---------+-------+
+| Field    | Type | Null | Key | Default | Extra |
++----------+------+------+-----+---------+-------+
+| gameID   | int  | YES  |     | NULL    |       |
+| score    | int  | YES  |     | NULL    |       |
+| gameDate | date | YES  |     | NULL    |       |
++----------+------+------+-----+---------+-------+
