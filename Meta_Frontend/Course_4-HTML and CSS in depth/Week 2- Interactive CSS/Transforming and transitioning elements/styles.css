@@ -2,12 +2,12 @@
 * {
 	padding: 0;
 	margin: 0;
-	color: pink;
+	color: white;
 }
   
 .container {
 	min-height: 100vh;
-	background-color:bisque;
+	background-color:rgb(156, 231, 231);
 }
   
 .letters {
@@ -22,22 +22,29 @@
 /* Add rules for the element 'p' present inside the class 'letters' using descendant selector */
 .letters > p{
 	text-align: center;
-	background-color: rgb(250, 150, 100);
+	background-color: rgb(250, 150, 150);
 	width: 70px;
 	margin-right: 1.5px;
 	border-radius: 15%;
-	border-color: rgb(250, 125, 75);
+	border-color: rgb(167, 127, 185);
 	border-style: solid;
 }
 
 /* Add rules for steps 8 and 9 */
 .letters:hover >p:nth-child(even){
 	transform: rotateY(360deg);
-	transition: 0.5s;
+	transition: 1.5s;
 }
 
 /* Add rules for steps 10 and 11 */
 .letters:hover >p:nth-child(odd){
 	transform: rotateX(360deg);
 	transition: 1.5s;
+}
+.letters >p:nth-child(odd)::first-letter{
+	color: rgb(146, 79, 214);
+}
+
+.letters >p:nth-child(even)::first-letter{
+	color: rgb(229, 238, 147);
 }
