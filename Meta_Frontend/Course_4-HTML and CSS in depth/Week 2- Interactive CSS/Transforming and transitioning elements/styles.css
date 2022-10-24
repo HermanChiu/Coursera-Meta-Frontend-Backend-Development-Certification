@@ -15,7 +15,7 @@
 	justify-content: center;
 	padding-top: 20px;
 	margin-bottom: 20px;
-	text-transform:uppercase;
+	text-transform: uppercase;
 	font-size: 60px;
 }
 
@@ -32,14 +32,16 @@
 
 /* Add rules for steps 8 and 9 */
 .letters:hover >p:nth-child(even){
-	transform: rotateY(360deg);
+	transform: rotateY(720deg);
 	transition: 1.5s;
+	transform: rotateZ(-720deg);
 }
 
 /* Add rules for steps 10 and 11 */
 .letters:hover >p:nth-child(odd){
-	transform: rotateX(360deg);
+	/* transform: rotateX(720deg); */
 	transition: 1.5s;
+	transform: rotateZ(720deg);
 }
 .letters >p:nth-child(odd)::first-letter{
 	color: rgb(146, 79, 214);
