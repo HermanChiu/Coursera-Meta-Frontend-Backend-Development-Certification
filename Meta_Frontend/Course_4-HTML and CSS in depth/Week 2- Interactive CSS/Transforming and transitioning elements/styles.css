@@ -7,8 +7,22 @@
   
 .container {
 	min-height: 100vh;
-	background-color:rgb(156, 231, 231);
+	background: linear-gradient(
+	rgb(108, 222, 245, 1) 0%,
+	rgba(240, 232, 161, 1) 50%,
+	rgba(229, 151, 227, 1) 100%);
 }
+
+.container:hover {
+	background: linear-gradient(90deg,
+	 rgba(229, 151, 227, 1) 0%,
+	 rgb(240, 232, 161, 1) 50%,
+	 rgba(108, 222, 245, 1) 100%);
+
+	transition: 5s;
+
+}
+
   
 .letters {
 	display: flex;
@@ -25,32 +39,37 @@
 	background-color: rgb(250, 150, 150);
 	width: 70px;
 	margin-right: 1.5px;
-	border-radius: 15%;
-	border-color: rgb(167, 127, 185);
+	border-radius: 20%;
+	border-width: 4px;
+	border-color: rgb(188, 164, 199);
 	border-style: solid;
 }
 
 /* Add rules for steps 8 and 9 */
-.letters:hover >p:nth-child(even){
+.letters:hover > p:nth-child(even){
 	transform: rotateY(720deg);
 	transition: 1.5s;
 	transform: rotateZ(-720deg);
 	color: rgb(146, 79, 214);
+	background-color: rgb(108, 222, 245);
+	border-color: rgb(238, 188, 113);
 }
 
 /* Add rules for steps 10 and 11 */
-.letters:hover >p:nth-child(odd){
+.letters:hover > p:nth-child(odd){
 	/* transform: rotateX(720deg); */
 	transition: 1.5s;
 	transform: rotateZ(720deg);
 	color: rgb(229, 238, 147);
+	background-color: rgb(108, 222, 245);
+	border-color: rgb(238, 188, 113);
 }
 
-.letters >p:nth-child(odd){
+.letters > p:nth-child(odd){
 	color: rgb(146, 79, 214);
 }
 
-.letters >p:nth-child(even){
+.letters > p:nth-child(even){
 	color: rgb(229, 238, 147);
 }
 /* note that if this was on the colors do not transform (since it is more specific)*/
