@@ -1,0 +1,105 @@
+html{
+    margin: 0;
+    padding: 0.3rem 0.3rem;
+    background-repeat: no-repeat;
+} 
+
+body {
+    background-repeat: no-repeat;
+    background: rgb(38,79,76);
+    background: linear-gradient(0deg, rgba(38,79,76,1) 0%, rgba(38,135,127,1) 10%, rgba(255,255,255,1) 100%);
+}
+
+.logo {
+    height: 200px;
+    width: 100px;
+    justify-content: center;
+}
+
+nav {
+    padding-bottom: 2rem;
+    height: 15vh;
+}
+a {
+    color:rgba(38,135,127,1)
+}
+
+button {
+    background-color: rgba(38,135,127,1);
+    color: white;
+    border: 5px none;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+}
+
+button:hover {
+    box-shadow: 0px 0px 1rem rgb(50, 160, 153);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 20px;
+}
+
+.row-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+article{
+    margin: 1rem;
+    padding: 1rem;
+    color: whitesmoke;
+}
+
+.focus {
+    font-size: 2rem;
+    min-height: 35vh;
+}
+
+section > article{
+    border: 5px white solid;
+    border-radius: 12px;
+}
+
+.secondary{
+    width: 29%;
+    min-height: 15vh;
+}
+
+@media screen and (max-width:1000px) {
+    .secondary{
+        width: 200px;
+    }
+}
+
+section > article:nth-child(even){
+	border: 5px rgba(38,135,127,1) solid;
+}
+
+
+#footer{
+    bottom: 0;
+    height: 5vh; 
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+
+.small-logo {
+    height: 50px;
+    width: 25px;
+}
+
+.copyright{
+    font-size: 0.5rem;
+    color: white;
+}
