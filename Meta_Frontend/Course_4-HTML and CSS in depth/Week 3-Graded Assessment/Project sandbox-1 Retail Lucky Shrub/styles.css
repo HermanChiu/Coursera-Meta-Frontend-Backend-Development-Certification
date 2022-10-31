@@ -27,10 +27,6 @@
         color:rgba(38,135,127,1)
     }
 
-    ul{
-        flex-wrap: wrap;
-    }
-
     button {
         background-color: rgba(38,135,127,1);
         color: white;
@@ -50,8 +46,8 @@
         transition: 1s;
     }
 
-
     ul {
+        flex-wrap: wrap;
         list-style-type: none;
         margin: 0;
         padding: 5px;
