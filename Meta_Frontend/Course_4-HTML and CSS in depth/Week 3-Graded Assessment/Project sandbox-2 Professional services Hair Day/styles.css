@@ -1,6 +1,8 @@
 html,body {
     background-color: #151515;
     margin: 10px;
+    background-repeat: no-repeat;
+    color: whitesmoke;
 }
 
 
@@ -9,26 +11,65 @@ html,body {
     grid-gap: 3px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 40px 40px;
+
+    justify-items: center;
 }
 
+img {
+    display: block;
+    margin: 1rem auto 2rem;
+}
 
 .logo {
-    height: 400px;
+    height: 300px;
     width: 400px;
 }
 
+nav {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: rgb(46, 46, 46);
+    border-radius: 2rem;
+}
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 5px;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+a > button {
+    letter-spacing: .5rem;
+    text-align: center;
+    padding: .5rem;
+    border: 2px none;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0);
+    font-weight: bolder;
+    font-size: large;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 2s;
+}
+
+button:active {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0  1rem rgb(83, 74, 74);
+    transition: 1s;
 }
 
 .card {
     padding: 8px;
     background-color: #282828;
     color: whitesmoke;
-    box-shadow: 3px 3px 8px gray;
+    box-shadow: 0 3px 12px rgb(83, 74, 74);
     border-radius: 1rem;
     line-height: 1.5rem;
+    margin: 0.5rem;
 }
