@@ -49,6 +49,7 @@ a > button {
     border: 2px none;
     border-radius: 0.5rem;
     background-color: rgba(255, 255, 255, 0);
+    color: whitesmoke;
     font-weight: bolder;
     font-size: large;
 }
