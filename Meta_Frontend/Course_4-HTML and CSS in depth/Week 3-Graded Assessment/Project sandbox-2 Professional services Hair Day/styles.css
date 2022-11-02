@@ -70,8 +70,7 @@ h1 {
     box-shadow: 0 3px 12px rgb(83, 74, 74);
     border-radius: 1rem;
     line-height: 2rem;
-    margin: 1rem 0.5rem;
-    
+    margin: 1rem 0.5rem;  
 }
 
 .main-card {
@@ -90,10 +89,15 @@ h1 {
     grid-auto-flow: column;
 }
 
+article img {
+    object-fit: fill;
+    max-width: 500px;
+    max-height: 350px;
+}
+
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* background-color: antiquewhite; */
     border-top: 5px solid rgb(65, 63, 63);
     margin-top: 2rem;
 }
