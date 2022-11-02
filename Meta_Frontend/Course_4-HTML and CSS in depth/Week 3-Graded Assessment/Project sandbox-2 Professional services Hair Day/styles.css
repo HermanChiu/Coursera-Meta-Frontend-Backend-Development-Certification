@@ -59,14 +59,25 @@ button:active {
     transition: 1s;
 }
 
+h1 {
+    font-size: 2.5rem;
+}
+
 .card {
     padding: 8px;
     background-color: #282828;
     color: whitesmoke;
     box-shadow: 0 3px 12px rgb(83, 74, 74);
     border-radius: 1rem;
-    line-height: 1.5rem;
+    line-height: 2rem;
     margin: 1rem 0.5rem;
+    
+}
+
+.main-card {
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
 }
 
 .sub-card {
