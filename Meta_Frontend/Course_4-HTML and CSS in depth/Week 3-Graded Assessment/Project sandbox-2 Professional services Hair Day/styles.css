@@ -46,15 +46,16 @@ a > button {
     color: whitesmoke;
     font-weight: bolder;
     font-size: large;
+    transition: 1s;
 }
 
 button:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(83, 74, 74, 0.5);
     transition: 2s;
 }
 
 button:active {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(83, 74, 74, 0.7);
     box-shadow: 0 0  1rem rgb(83, 74, 74);
     transition: 1s;
 }
@@ -71,17 +72,32 @@ h1 {
     border-radius: 1rem;
     line-height: 2rem;
     margin: 1rem 0.5rem;  
+    transition: 1s;
 }
+
 
 .main-card {
     font-weight: bold;
     font-size: 1.3rem;
     line-height: 2.5rem;
+    background-color: rgb(163, 119, 69);
 }
 
 .sub-card {
     margin: 0.8rem;
     justify-items: stretch;
+}
+
+.main-card:hover{
+    transform: translate3d(0, -1px, 0) scale(1.02);
+    background-color: rgb(179, 126, 67);
+    transition: 1s;
+}
+
+.sub-card:hover{
+    transform: translate3d(0, -1px, 0) scale(1.02);
+    background-color: rgba(52, 52, 52, 1);
+    transition: 1s;
 }
 
 .cols {
