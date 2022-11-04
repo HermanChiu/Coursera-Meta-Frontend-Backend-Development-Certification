@@ -5,9 +5,9 @@ html,body {
     color: whitesmoke;
 }
 
-img {
+header {
     display: block;
-    margin: 1rem auto 2rem;
+    text-align: center;
 }
 
 .logo {
