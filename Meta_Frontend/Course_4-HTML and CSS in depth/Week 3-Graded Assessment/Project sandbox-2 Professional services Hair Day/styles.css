@@ -51,6 +51,7 @@ a > button {
 
 button:hover {
     background-color: rgba(83, 74, 74, 0.5);
+    cursor: pointer;
     transition: 2s;
 }
 
@@ -75,6 +76,14 @@ h1 {
     transition: 1s;
 }
 
+.card a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.card a:hover{
+    text-decoration: underline;
+}
 
 .main-card {
     font-weight: bold;
