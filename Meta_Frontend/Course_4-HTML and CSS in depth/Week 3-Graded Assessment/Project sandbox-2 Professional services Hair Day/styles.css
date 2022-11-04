@@ -76,6 +76,12 @@ h1 {
     transition: 1s;
 }
 
+.card img {
+    display: block;
+    justify-self: center;
+    margin: 2rem auto;
+}
+
 .card a{
     color: whitesmoke;
     text-decoration: none;
