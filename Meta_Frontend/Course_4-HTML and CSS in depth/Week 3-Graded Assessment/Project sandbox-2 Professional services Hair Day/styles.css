@@ -136,8 +136,10 @@ footer {
 footer > div {
     padding: 0 0.8rem;
 }
+
 .footer-logo {
     justify-self: start;
+    margin-top: 0.5rem;
 }
 
 .small-logo {
