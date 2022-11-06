@@ -82,6 +82,10 @@ h1 {
     margin: 2rem auto;
 }
 
+.card p {
+    padding: 1rem;
+}
+
 .card a{
     color: whitesmoke;
     text-decoration: none;
