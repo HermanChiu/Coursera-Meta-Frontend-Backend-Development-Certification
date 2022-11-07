@@ -13,6 +13,7 @@ header {
 .logo {
     height: 300px;
     width: 400px;
+    padding-bottom: 1rem;
 }
 
 nav {
