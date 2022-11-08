@@ -16,6 +16,11 @@ header {
     padding-bottom: 1rem;
 }
 
+::selection {
+    color: white;
+    background: rgba(255, 228, 196, 0.5);
+}
+
 nav {
     margin: 0.5rem;
     padding: 0.5rem;
