@@ -81,8 +81,11 @@ button {
     color:rgb(243, 242, 250);
     border: 3px solid rgb(157, 145, 231);
     border-radius: 10px;
-    margin: .5rem;
-    
+    margin: 0 .5rem 1.5rem;
+}
+
+.main-card  p {
+    font-size: 1.5rem;
 }
 
 .content {
