@@ -37,7 +37,9 @@ ul {
 .nav-button {
     margin-right: 10rem;
     border-radius: 5px;
-
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .nav-button:hover {
@@ -85,6 +87,14 @@ button {
 
 .content {
     padding: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
 }
 
 .sub-card {
