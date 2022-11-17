@@ -13,6 +13,10 @@ nav {
     width: 100%;
 }
 
+.nav-links {
+    margin-right: 5rem;
+}
+
 .small-logo {
     width: 250px;
     height: 30px;
@@ -36,7 +40,6 @@ ul {
 }
 
 .nav-button {
-    margin-right: 10rem;
     border-radius: 5px;
     padding: 1rem 1.5rem;
     font-weight: bold;
@@ -88,6 +91,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .card {
