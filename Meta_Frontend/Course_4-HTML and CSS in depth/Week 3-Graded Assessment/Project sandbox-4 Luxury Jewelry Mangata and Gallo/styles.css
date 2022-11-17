@@ -8,13 +8,14 @@ nav {
     background-color: rgb(32, 32, 32);
     display: flex;
     justify-items: flex-start;
-    padding: 1rem;
+    padding: 0.75rem 1rem;
     border-bottom: .25rem solid rgb(150, 150, 150);
+    width: 100%;
 }
 
 .small-logo {
     width: 250px;
-    height: 40px;
+    height: 30px;
     align-self: center;
 }
 
@@ -101,6 +102,14 @@ a:hover {
     font-size: 1.5rem;
 }
 
+.main-card {
+    background-image: url("src/jewelry.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color:rgb(32, 32, 32);
+    line-height: 2.5rem;
+}
+
 .card p {
     padding-left: 1rem;
 }
@@ -126,7 +135,7 @@ footer {
     background-color: rgb(32, 32, 32);
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 0.75rem 1rem;
     align-items: center;
     color:rgb(243, 242, 250);
     border-top: .25rem solid rgb(150, 150, 150);
