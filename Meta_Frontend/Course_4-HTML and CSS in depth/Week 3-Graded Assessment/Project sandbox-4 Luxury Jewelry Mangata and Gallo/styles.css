@@ -58,13 +58,6 @@ ul {
     transition: 2s;
 }
 
-nav > ul { 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
 button {
     background-color: transparent;
     border: 2px none;
