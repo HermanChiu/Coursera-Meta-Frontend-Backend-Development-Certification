@@ -2,6 +2,7 @@ html,body {
     background-color: rgb(243, 242, 250);
     background-repeat: no-repeat;
     margin: 0;
+    width: 100%;
 }
 
 nav {
@@ -11,10 +12,11 @@ nav {
     padding: 0.75rem 1rem;
     border-bottom: .25rem solid rgb(150, 150, 150);
     width: 100%;
+    overflow: auto;
 }
 
 .nav-links {
-    margin-right: 5rem;
+    margin-right: 2rem;
 }
 
 .small-logo {
@@ -142,4 +144,5 @@ footer {
     align-items: center;
     color:rgb(243, 242, 250);
     border-top: .25rem solid rgb(150, 150, 150);
+    width: 100%;
 }
