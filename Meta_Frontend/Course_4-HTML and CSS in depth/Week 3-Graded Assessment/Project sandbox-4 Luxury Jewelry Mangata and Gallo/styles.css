@@ -112,6 +112,7 @@ a:hover {
 
 .card p {
     padding-left: 1rem;
+    line-height: 1.5rem;
 }
 
 .card-img {
