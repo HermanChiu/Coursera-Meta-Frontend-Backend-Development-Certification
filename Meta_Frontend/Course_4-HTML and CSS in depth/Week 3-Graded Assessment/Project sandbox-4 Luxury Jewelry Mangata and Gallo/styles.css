@@ -110,8 +110,7 @@ a:hover {
     line-height: 2.5rem;
 }
 
-.card p {
-    padding-left: 1rem;
+.sub-card * {
     line-height: 1.5rem;
 }
 
