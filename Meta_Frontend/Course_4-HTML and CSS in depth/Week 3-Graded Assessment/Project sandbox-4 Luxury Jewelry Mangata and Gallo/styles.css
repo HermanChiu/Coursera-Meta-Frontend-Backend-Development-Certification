@@ -7,7 +7,7 @@ html,body {
 
 body {
     min-height: 100vh;
-  }
+}
 
 nav {
     background-color: rgb(32, 32, 32);
@@ -100,6 +100,7 @@ a:hover {
     border: 3px solid rgb(157, 145, 231);
     border-radius: 10px;
     margin: 0 .5rem 1.5rem;
+    box-sizing: border-box;
 }
 
 .main-card  p {
@@ -145,6 +146,24 @@ h2 {
 .sub-card {
     width: 33.33%;
     flex-grow: 1;
+}
+
+@media screen and (max-width: 1000px){
+
+    .small-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sub-card {
+        max-width: 995px;
+        min-width: 975px;
+    }
+    
+    .card {
+        margin: 1rem 0.1rem;
+    }
 }
 
 footer {
