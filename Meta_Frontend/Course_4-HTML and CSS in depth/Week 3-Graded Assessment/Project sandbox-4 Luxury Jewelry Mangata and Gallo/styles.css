@@ -127,7 +127,7 @@ a:hover {
 
 .card:hover {
     transform: translate3d(0, -1px, 0) scale(1.02);
-    box-shadow: 0px 0px 1.5rem rgb(88, 123, 163);
+    box-shadow: 0px 0px 2rem rgb(118, 102, 209);
     transition: 2s;
 }
 
