@@ -113,6 +113,7 @@ a:hover {
     background-size: 100% 100%;
     color:rgb(32, 32, 32);
     line-height: 2.5rem;
+    border: 3px solid rgb(175, 235, 202);
 }
 
 .sub-card * {
@@ -128,6 +129,13 @@ a:hover {
 .card:hover {
     transform: translate3d(0, -1px, 0) scale(1.02);
     box-shadow: 0px 0px 2rem rgb(118, 102, 209);
+    transition: 2s;
+}
+
+
+.main-card:hover {
+    transform: translate3d(0, -1px, 0) scale(1.005);
+    box-shadow: 0px 0px 2rem rgb(116, 236, 236);
     transition: 2s;
 }
 
