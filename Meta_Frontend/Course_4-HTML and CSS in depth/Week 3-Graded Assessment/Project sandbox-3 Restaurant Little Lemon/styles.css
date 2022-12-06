@@ -1,0 +1,26 @@
+html,body{
+    margin: 0;
+    background-repeat: no-repeat;
+} 
+
+nav {
+    background-color: rgb(76, 117, 76);
+
+}
+
+.small-logo {
+    height: 100px;
+    width: 50px;
+    padding: .5rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: black;
+}
