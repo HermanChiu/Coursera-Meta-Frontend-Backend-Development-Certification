@@ -30,6 +30,7 @@ nav {
 .nav-button:hover {
     background-color: rgb(197, 182, 48);
     cursor: pointer;
+    color: black;
     transition: 1s;
 }
 
@@ -39,6 +40,17 @@ nav {
     padding: .5rem;
 }
 
+.logo {
+    max-height: 200px;
+    max-width: 650px;
+    align-self: center;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
 footer {
     background-color: black;
     color: aliceblue;
