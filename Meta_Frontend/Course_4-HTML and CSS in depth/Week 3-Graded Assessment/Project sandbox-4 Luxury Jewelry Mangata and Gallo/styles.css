@@ -51,6 +51,7 @@ ul {
     padding: 1rem 1.5rem;
     font-weight: bold;
     font-size: 1.2rem;
+    transition: 1s;
 }
 
 .nav-button:hover {
@@ -59,7 +60,7 @@ ul {
     transition: 2s;
 }
 
-.nav-button:actve {
+.nav-button:active {
     color: rgba(32, 32, 32, 0.5);
     background-color: rgba(204, 198, 243, 0.5);
     transition: 2s;
