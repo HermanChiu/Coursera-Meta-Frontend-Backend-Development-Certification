@@ -21,10 +21,20 @@ nav {
     font-size: 1.5rem;
     padding: 1rem;
     background-color: rgb(76, 117, 76);
+    box-sizing: border-box;
     color: aliceblue;
     border: none;
     border-radius: 5px;
     transition: 1s;
+}
+
+#nav-buttons {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .nav-button:hover {
