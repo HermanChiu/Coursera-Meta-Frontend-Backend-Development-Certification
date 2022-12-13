@@ -56,6 +56,30 @@ nav {
     align-self: center;
 }
 
+.main-card {
+    border: rgb(197, 182, 48) 5px solid;
+    background-color: gold;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.sub-card {
+    border: rgb(76, 117, 76) 5px solid;
+    background-color: gold;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0.33rem;
+}
+
+.cards {
+    display: grid;
+    gap: 1em;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    padding: .5rem;
+}
+
 #logo {
     display: flex;
     justify-content: center;
