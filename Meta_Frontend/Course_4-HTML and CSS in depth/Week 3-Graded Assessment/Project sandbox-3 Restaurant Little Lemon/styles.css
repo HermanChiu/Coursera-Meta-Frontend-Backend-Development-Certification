@@ -85,6 +85,16 @@ nav {
     justify-content: center;
     padding: 2rem;
 }
+
+a {
+    color:rgb(42, 99, 42);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
 footer {
     background-color: black;
     color: aliceblue;
