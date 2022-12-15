@@ -58,7 +58,8 @@ nav {
 
 .main-card {
     border: rgb(197, 182, 48) 5px solid;
-    background-color: gold;
+    background-color: rgb(196, 186, 103);
+    color: rgb(119, 75, 50);
     border-radius: 1rem;
     padding: 1rem;
     margin: 1rem;
@@ -66,7 +67,7 @@ nav {
 
 .sub-card {
     border: rgb(76, 117, 76) 5px solid;
-    background-color: gold;
+    background-color: rgb(179, 170, 94);
     border-radius: 1rem;
     padding: 1rem;
     margin: 0.33rem;
