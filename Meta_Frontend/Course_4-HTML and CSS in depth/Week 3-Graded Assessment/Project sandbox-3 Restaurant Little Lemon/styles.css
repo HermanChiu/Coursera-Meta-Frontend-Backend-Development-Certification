@@ -1,7 +1,7 @@
 html,body{
     margin: 0;
     background-repeat: no-repeat;
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(230, 225, 204);
 } 
 
 nav {
@@ -22,7 +22,7 @@ nav {
     padding: 1rem;
     background-color: rgb(76, 117, 76);
     box-sizing: border-box;
-    color: aliceblue;
+    color: rgb(230, 225, 204);
     border: none;
     border-radius: 5px;
     transition: 1s;
@@ -103,5 +103,5 @@ a:hover{
 
 footer {
     background-color: black;
-    color: aliceblue;
+    color: rgb(230, 225, 204);
 }
