@@ -61,16 +61,24 @@ nav {
     background-color: rgb(221, 213, 143);
     color: rgb(14, 75, 77);
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     margin: 1rem;
 }
 
+.main-card > ul { 
+    font-size: larger;
+}
+
+.main-card > h1 {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
 
 .sub-card {
     border: rgb(76, 117, 76) 5px solid;
     background-color: rgb(221, 213, 143);
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     margin: 0.33rem;
 }
 
