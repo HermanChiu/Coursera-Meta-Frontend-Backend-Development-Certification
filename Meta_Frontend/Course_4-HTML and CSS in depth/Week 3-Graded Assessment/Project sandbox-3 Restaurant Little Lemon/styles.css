@@ -87,6 +87,10 @@ nav {
     padding-left: 1rem;
 }
 
+ul {
+    list-style-type: circle;
+}
+
 .cards {
     display: grid;
     gap: 1em;
