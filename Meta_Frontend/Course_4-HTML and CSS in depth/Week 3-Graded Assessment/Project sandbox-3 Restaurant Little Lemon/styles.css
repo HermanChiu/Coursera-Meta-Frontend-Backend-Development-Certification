@@ -87,6 +87,11 @@ nav {
     padding-left: 1rem;
 }
 
+.card:hover {
+    box-shadow: 0 .5rem 1rem rgb(100, 44, 21);
+    transition: 2s;
+}
+
 ul {
     list-style-type: circle;
 }
