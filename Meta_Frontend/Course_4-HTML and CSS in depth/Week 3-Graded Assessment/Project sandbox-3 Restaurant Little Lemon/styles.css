@@ -39,6 +39,7 @@ nav {
 
 .nav-button:hover {
     background-color: rgb(197, 182, 48);
+    transform: translate3d(0, -1px, 0) scale(1.05);
     cursor: pointer;
     color: black;
     transition: 1s;
