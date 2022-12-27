@@ -63,13 +63,24 @@ nav {
     border-radius: 1rem;
     padding: 1rem 1.5rem;
     margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.main-card > ul { 
+.main-img {
+    height: 100%;
+    margin-right: 5rem;
+    min-height: 200px;
+    min-width: 500px;
+}
+
+.main-text > ul { 
     font-size: larger;
 }
 
-.main-card > h1 {
+.main-text > h1 {
     font-weight: bolder;
     font-size: 1.5rem;
 }
@@ -85,6 +96,13 @@ nav {
 
 .sub-card > p {
     padding-left: 1rem;
+}
+
+.sub-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 .card:hover {
