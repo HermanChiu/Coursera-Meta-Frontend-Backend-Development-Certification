@@ -106,6 +106,10 @@ nav {
     width: 100%;
 }
 
+.card {
+    line-height: 1.5rem;
+}
+
 .card:hover {
     box-shadow: 0 .5rem 1rem rgb(100, 44, 21);
     transition: 2s;
