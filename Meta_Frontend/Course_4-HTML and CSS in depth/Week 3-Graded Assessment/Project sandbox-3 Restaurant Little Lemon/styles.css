@@ -112,7 +112,12 @@ nav {
 
 .card:hover {
     box-shadow: 0 .5rem 1rem rgb(100, 44, 21);
-    transition: 2s;
+    transition: 1.5s;
+}
+
+.sub-card:hover {
+    box-shadow: 0 .5rem 1rem rgb(24, 73, 53);
+    transition: 1.5s;
 }
 
 ul {
