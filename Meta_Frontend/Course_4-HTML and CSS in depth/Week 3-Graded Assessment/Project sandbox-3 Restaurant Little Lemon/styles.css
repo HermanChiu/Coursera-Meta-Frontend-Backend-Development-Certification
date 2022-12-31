@@ -133,6 +133,27 @@ ul {
     padding: .5rem;
 }
 
+@media (max-width: 1000px) {
+    .cards {
+        display: grid;
+        gap: 1em;
+        grid-auto-flow: row;
+        grid-auto-columns: 1fr;
+        padding: .5rem;
+    }
+
+    .sub-card {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sub-img {
+        display: block;
+        margin-left: 1rem;
+        margin-right: 2rem;
+        width: 50%;
+    }
+}
 #logo {
     display: flex;
     justify-content: center;
