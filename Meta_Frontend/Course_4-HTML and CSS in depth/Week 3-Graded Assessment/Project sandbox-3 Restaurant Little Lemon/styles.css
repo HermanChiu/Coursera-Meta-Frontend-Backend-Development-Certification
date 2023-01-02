@@ -174,4 +174,5 @@ a:hover{
 footer {
     background-color: black;
     color: rgb(230, 225, 204);
+    border-top: 8px solid rgb(104, 65, 50);
 }
