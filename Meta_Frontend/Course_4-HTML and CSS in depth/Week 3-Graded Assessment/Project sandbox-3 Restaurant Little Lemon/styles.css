@@ -97,7 +97,8 @@ nav {
 }
 
 .sub-card p {
-    padding-left: 1rem;
+    padding: 0 1rem;
+    text-align: justify;
 }
 
 .sub-img {
