@@ -104,6 +104,11 @@ a:hover {
     box-sizing: border-box;
 }
 
+.card p {
+    padding-left: 1rem;
+    text-align: justify;
+}
+
 .main-card  p {
     font-size: 1.5rem;
 }
