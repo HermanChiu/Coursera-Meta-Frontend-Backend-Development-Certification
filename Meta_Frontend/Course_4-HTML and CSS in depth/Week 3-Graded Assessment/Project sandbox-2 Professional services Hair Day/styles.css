@@ -82,6 +82,15 @@ h1 {
     transition: 1s;
 }
 
+.card p {
+    padding: 0 1rem;
+    text-align: justify;
+}
+
+.card .work-hours {
+    padding-left: 2rem;
+}
+
 .card img {
     display: block;
     justify-self: center;
