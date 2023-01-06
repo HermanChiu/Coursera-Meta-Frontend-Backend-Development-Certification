@@ -106,9 +106,13 @@
         min-height: 15vh;
     }
 
+    .secondary p {
+        padding: 0 0.5rem;
+    }
+
     .row-display > .hours + .hours {
         border-left: 2px black solid;
-        padding-left: 1rem; 
+        padding-left: 3rem; 
     }
 
     @media (max-width:1000px) {
