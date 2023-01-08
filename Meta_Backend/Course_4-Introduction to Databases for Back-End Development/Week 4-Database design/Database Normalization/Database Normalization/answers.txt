@@ -1,0 +1,47 @@
+mysql;
+
+Create DATABASE Hospital;
+USE Hospital;
+
+
+## unnormalized
+CREATE TABLE Surgery  (DoctorID VARCHAR(10), DoctorName VARCHAR(50), Region VARCHAR(20), PatientID VARCHAR(10), PatientName VARCHAR(50),
+ SurgeryNumber INT, Council  VARCHAR(20), Postcode VARCHAR(10), SlotID VARCHAR(5), TotalCost Decimal);
+
+
+## normalized
+
+### First Normal Form (1NF)   
+# enforce the data atomicity rule and eliminate unnecessary repeating groups of data
+CREATE TABLE Patient (PatientID VARCHAR(10) NOT NULL, PatientName VARCHAR(50), SlotID VARCHAR(10) NOT NULL, TotalCost Decimal,  CONSTRAINT PK_Patient PRIMARY KEY (PatientID, SlotID));  
+
+Show tables;
+
+Show columns from Patient;
+
+CREATE TABLE Doctor (DoctorID VARCHAR(10), DoctorName VARCHAR(50), PRIMARY KEY (DoctorID));  
+
+Show tables;
+
+Show columns from Doctor;
+
+CREATE TABLE Surgery (SurgeryNumber INT NOT NULL, Region VARCHAR(20), Council  VARCHAR(20), Postcode VARCHAR(10), PRIMARY KEY (SurgeryNumber));  
+
+Show tables;
+
+Show columns from Surgery;
+
+### Second Normal Form (2NF)   
+# avoids any partial dependency relationships, mainly tables with composite keys
+
+CREATE TABLE Patient (PatientID VARCHAR(10) NOT NULL, PatientName, VARCHAR(50), PRIMARY KEY (PatientID));  
+
+CREATE TABLE Appointments (AppointmentID INT NOT NULL, SlotID, VARCHAR(10),  TotalCost Decimal, PRIMARY KEY (AppointmentID));  
+
+###Third Normal Form (3NF)
+# must already be in second normal form, must have no transitive dependency.
+# any non-key attribute in the surgery table may not be functionally dependent on another non-key attribute in the same table
+
+CREATE TABLE Location  (SurgeryNumber INT NOT NULL, Postcode VARCHAR(10), PRIMARY KEY (SurgeryNumber));  
+
+CREATE TABLE Council  (Council VARCHAR(20) NOT NULL, Region VARCHAR(20), PRIMARY KEY (Council));  
