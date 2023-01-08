@@ -1,0 +1,18 @@
+mysql;
+CREATE DATABASE automobile;
+USE automobile;
+
+CREATE TABLE vehicle( vehicleID varchar(10), ownerID varchar(10), plateNumber varchar(10), phonenumber INT, primary key (vehicleID));
+
+Show tables;
+
+Show columns from vehicle;
+
+
+CREATE TABLE Owner( OwnerID varchar(10), OwnerName varchar(50), OwnerAddress varchar(255), primary key (OwnerID));
+
+Show columns from Owner;
+
+ALTER TABLE vehicle ADD FOREIGN KEY (ownerID) REFERENCES Owner (OwnerID);
+
+Show columns from vehicle;
