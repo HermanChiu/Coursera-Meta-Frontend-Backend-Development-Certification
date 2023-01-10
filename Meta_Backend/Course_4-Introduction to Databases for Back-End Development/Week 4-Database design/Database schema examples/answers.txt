@@ -1,0 +1,33 @@
+Task 1: Identify the database’s purpose
+
+The database is to make a database for the chinook digital media company.
+It should include tables for the company employees, artists, albums, songs, sales, customers.
+
+Employee table:
+EmployeeID VARCHAR(20), JoinDate DATE, Name VARCHAR(20), BirthDate DATE, Position VARCHAR(20), Address VARCHAR(50), Manager VARCHAR(20)
+
+Artist table:
+ArtistID INT, ArtistName VARCHAR(20), DebutDate DATE
+
+Albums table:
+AlbumID VARCHAR(20), AlbumName VARCHAR(20), ArtistID INT
+
+Songs table:
+SongID VARCHAR(20), SongName VARCHAR(30), AlbumID VARCHAR(20), UnitPrice DECIMAL
+
+Invoice table:
+InvoiceId VARCHAR(20), CustomerID VARCHAR(20), InvoiceDate DATE,
+
+Customer table:
+CustomerID VARCHAR(20), CustomerName VARCHAR(20), Address VARCHAR(50), InvoiceId VARCHAR(20), PhoneNumber VARCHAR(20), email VARCHAR(50)
+
+Task 2: primary key for each table
+First in each table ( ID columns)
+
+Task 3: Identify the relationships between the 6 main tables
+
+Artist -> Albums -> Songs 
+PK: Artist.ArtistID -> FK: albums.ArtistID, PK: albums.AlbumID -> FK: Songs.AlbumID
+
+Customer -> Invoice 
+PK: Customer.CustomerID -> FK: Invoice.CustomerID
